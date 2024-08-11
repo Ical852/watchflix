@@ -89,6 +89,7 @@ class DetailTv extends StatelessWidget {
           }
           if (state is TvRecommendationsSuccess) {
             return RowSlideContent(
+              isTv: true,
               isDetail: true,
               state: state.recommendations,
               title: "More Like This"
@@ -153,6 +154,7 @@ class DetailTv extends StatelessWidget {
                 ),
                 BackdropLayer(),
                 BackdropContent(
+                  mainDetail: mainDetail,
                   detail: state.detail,
                 ),
                 MainContent(state.detail)

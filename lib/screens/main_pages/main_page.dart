@@ -4,6 +4,7 @@ import 'package:watchflix/blocs/cubits/page_cubit.dart';
 import 'package:watchflix/screens/main_pages/bottom_navigator.dart';
 import 'package:watchflix/screens/main_pages/tabs/explore_tab/explore_tab.dart';
 import 'package:watchflix/screens/main_pages/tabs/home_tab/home_tab.dart';
+import 'package:watchflix/screens/main_pages/tabs/saved_tab/saved_tab.dart';
 import 'package:watchflix/shared/constants.dart';
 import 'package:watchflix/view_models/main/main_view_model.dart';
 
@@ -46,6 +47,7 @@ class _MainPageState extends State<MainPage> with WidgetsBindingObserver {
   Widget build(BuildContext context) {
     Widget ContentRender(String state) {
       if (state == "explore") return ExploreTab();
+      if (state == "saved") return SavedTab();
       return HomeTab();
     }
 

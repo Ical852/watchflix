@@ -32,9 +32,7 @@ class RowSlideContent extends StatelessWidget {
               style: mega.white.semiBold,
             ),
           ),
-          SizedBox(
-            height: 10,
-          ),
+          SizedBox(height: 10),
           Container(
             height: 200,
             child: ListView.builder(

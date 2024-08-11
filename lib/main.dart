@@ -11,6 +11,7 @@ import 'package:watchflix/blocs/cubits/movie_trailer_cubit.dart';
 import 'package:watchflix/blocs/cubits/now_playing_movie_cubit.dart';
 import 'package:watchflix/blocs/cubits/page_cubit.dart';
 import 'package:watchflix/blocs/cubits/popular_tv_cubit.dart';
+import 'package:watchflix/blocs/cubits/saved_cubit.dart';
 import 'package:watchflix/blocs/cubits/search_movie_cubit.dart';
 import 'package:watchflix/blocs/cubits/search_tv_cubit.dart';
 import 'package:watchflix/blocs/cubits/top_rated_movie_cubit.dart';
@@ -65,6 +66,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => TvDetailCubit()),
         BlocProvider(create: (context) => TvCastCubit()),
         BlocProvider(create: (context) => TvTrailerCubit()),
+        BlocProvider(create: (context) => SavedCubit()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

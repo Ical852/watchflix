@@ -22,6 +22,8 @@ class MenuItemCustom extends StatelessWidget {
         return active ? 'ic_home_active.png' : 'ic_home.png';
       } else if (icon == 'explore') {
         return active ? 'ic_explore_active.png' : 'ic_explore.png';
+      } else if (icon == 'saved') {
+        return active ? 'ic_saved_active.png' : 'ic_saved.png';
       } else {
         return active ? 'ic_home_active.png' : 'ic_home.png';
       }
@@ -36,6 +38,8 @@ class MenuItemCustom extends StatelessWidget {
         return 'Home';
       } else if (icon == 'explore') {
         return 'Explore';
+      } else if (icon == 'saved') {
+        return 'Saved';
       } else {
         return 'Home';
       }

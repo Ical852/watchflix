@@ -13,9 +13,7 @@ class DrawerTitleDesc extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(title, style: medium.white.semiBold),
-          SizedBox(
-            height: 4,
-          ),
+          SizedBox(height: 4),
           Text(desc, style: small.white.regularF)
         ],
       ),

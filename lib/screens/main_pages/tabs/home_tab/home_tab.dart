@@ -54,20 +54,14 @@ class _HomeTabState extends State<HomeTab> {
     Widget HeadContent() {
       return Column(
         children: [
-          SizedBox(
-            height: 24,
-          ),
+          SizedBox(height: 24),
           HeaderUser(),
-          SizedBox(
-            height: 16,
-          ),
+          SizedBox(height: 16),
           GestureDetector(
             onTap: () => context.read<PageCubit>().setNewPage("explore"),
             child: SearchBox()
           ),
-          SizedBox(
-            height: 24,
-          ),
+          SizedBox(height: 24),
         ],
       );
     }

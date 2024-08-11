@@ -41,7 +41,7 @@ class _SplashPageState extends State<SplashPage> {
                   height: 3,
                 ),
                 Text(
-                  "watchflix",
+                  "Watchflix",
                   style: mass.white.semiBold,
                 )
               ],

@@ -6,6 +6,7 @@ import 'package:watchflix/blocs/cubits/movie_recommendations_cubit.dart';
 import 'package:watchflix/blocs/cubits/movie_trailer_cubit.dart';
 import 'package:watchflix/functions/global_func.dart';
 import 'package:watchflix/models/detail_response.dart';
+import 'package:watchflix/models/fetch_response.dart';
 import 'package:watchflix/screens/detail_pages/movie/partials/backdrop_content.dart';
 import 'package:watchflix/screens/detail_pages/movie/partials/backdrop_img.dart';
 import 'package:watchflix/screens/detail_pages/movie/partials/backdrop_layer.dart';
@@ -24,13 +25,15 @@ class DetailMovie extends StatelessWidget {
     onRecommendFetch,
     onCastFetch,
     onTrailerFetch;
+  Results mainDetail;
   
   DetailMovie({
     super.key,
     required this.onDetailFetch, 
     required this.onRecommendFetch, 
     required this.onCastFetch, 
-    required this.onTrailerFetch
+    required this.onTrailerFetch,
+    required this.mainDetail,
   });
 
   @override
@@ -155,6 +158,7 @@ class DetailMovie extends StatelessWidget {
                 ),
                 BackdropLayer(),
                 BackdropContent(
+                  mainDetail: mainDetail,
                   detail: state.detail,
                 ),
                 MainContent(state.detail)

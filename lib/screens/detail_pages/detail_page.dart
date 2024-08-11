@@ -49,6 +49,7 @@ class _DetailPageState extends State<DetailPage> {
       );
     }
     return DetailMovie(
+      mainDetail: this.widget.detail,
       onDetailFetch: () => detailVM.getDetail(this.widget.detail.id.toString()),
       onRecommendFetch: () => detailVM.getRecommendations(this.widget.detail.id.toString()),
       onCastFetch: () => detailVM.getCasts(this.widget.detail.id.toString()),

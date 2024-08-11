@@ -34,6 +34,11 @@ class BottomNavigator extends StatelessWidget {
               onPress: () => onPress('explore'),
               active: currentPage == 'explore',
             ),
+            MenuItemCustom(
+              icon: 'saved',
+              onPress: () => onPress('saved'),
+              active: currentPage == 'saved',
+            ),
           ],
         ),
       ),
